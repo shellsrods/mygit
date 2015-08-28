@@ -12,7 +12,7 @@ public class WelcomeUserAction{
 		this.username = username;
 	}
 
-	// all struts logic here
+	//all struts logic here
 	public String execute() {
 
 		return "SUCCESS";
