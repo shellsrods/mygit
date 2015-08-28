@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+<constant name="struts.devMode" value="true" />
+
+<package name="User" namespace="/User" extends="struts-default">
+     <default-action-ref name="Welcome" />
+		<action name="login">
+			<result>User/pages/login.jsp</result>
+		</action>
+		<action name="Welcome" class="com.mkyong.user.action.WelcomeUserAction" method="execute">
+			<result name="SUCCESS">User/pages/index.jsp</result>
+		</action>
+	</package>
+	
+	
+</struts>
