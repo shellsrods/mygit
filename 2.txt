@@ -6,6 +6,7 @@ test 3
 added once more3
 test 4
 
+change added in between
 
 change1
 next change
